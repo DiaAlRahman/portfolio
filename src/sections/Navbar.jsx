@@ -1,10 +1,23 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { navLinks } from '../constants';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  // Update screen size on window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 640); // Tailwind's sm breakpoint is 640px
+    };
+    
+    handleResize(); // Check initial size
+    window.addEventListener('resize', handleResize);
+    
+    return () => window.removeEventListener('resize', handleResize); // Cleanup
+  }, []);
   const toggleMenu = () => setIsOpen((prev) => !prev);
   const shutMenu = () => setIsOpen(false);
+  const openMenu = () => setIsOpen(true);
   const NavItems = () => {
     return (
       <ul className='nav-ul'>
@@ -24,8 +37,12 @@ const Navbar = () => {
           <nav className={`falling-navbar ${isOpen ? 'translate-y-0' : '-translate-y-[50vh]'}`}>
             <NavItems />
           </nav>
-          <button onMouseOver={toggleMenu} className='text-neutral-400 hover:text-white focus:outline-none flex' aria-label='Toggle Menu'>
-            <img src={"assets/menu.svg"} alt='menu' className='w-6 h-6'/>
+          <button
+              onMouseOver={!isSmallScreen ? openMenu : undefined}
+              onClick={isSmallScreen ? toggleMenu : undefined}
+              className='text-neutral-400 hover:text-white focus:outline-none flex'
+              aria-label='Toggle Menu'>
+      <img src="assets/menu.svg" alt="menu" className="w-6 h-6" />
           </button>
         </div>
       </div>
