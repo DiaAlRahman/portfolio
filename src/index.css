@@ -38,6 +38,10 @@ body {
     @apply absolute left-0 right-0 bg-black-200 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
   }
 
+  .falling-navbar {
+    @apply bg-black/80 backdrop-blur-sm transform transition-transform duration-500 ease-in-out z-20 sm:flex hidden;
+  }
+
   .text-gray_gradient {
     @apply bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
   }
