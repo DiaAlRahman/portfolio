@@ -21,6 +21,13 @@ export const navLinks = [
   },
 ];
 
+export const heroTags = [
+  'a lively social initiator',
+  'a lifelong learner',
+  'a colourful conversationalist',
+  'a curious problem solver',
+]
+
 export const clientReviews = [
   {
     id: 1,
