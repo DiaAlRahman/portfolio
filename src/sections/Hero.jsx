@@ -1,11 +1,14 @@
+/* eslint-disable react/no-unknown-property */
 import { Suspense, useEffect, useState } from "react";
 import { calculateSizes, heroTags } from "../constants";
 import { Canvas } from "@react-three/fiber";
-import { PerspectiveCamera } from "@react-three/drei";
+import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import HackerRoom from "../components/HackerRoom";
 import CanvasLoader from "../components/CanvasLoader";
 // import { Leva, useControls } from "leva";
 import { useMediaQuery } from "react-responsive";
+import PropTypes from 'prop-types'
+import RubiksCube from "../components/RubiksCube";
 
 const Hero = () => {
   const HeroTags = ({ contents, interval = 10000 }) => {
@@ -27,6 +30,10 @@ const Hero = () => {
         <p className="hero_tag text-gray_gradient typing-text" key={contents[i]}>{ contents[i] }</p>
         </div>
     );
+  };
+  HeroTags.propTypes = {
+    contents: PropTypes.arrayOf(PropTypes.string).isRequired,
+    interval: PropTypes.number,
   };
   // const controls = useControls('HackerRoom', {
   //   positionX: {
@@ -80,14 +87,17 @@ const Hero = () => {
           <Canvas className="w-full h-full">
             <Suspense fallback={<CanvasLoader />}>
               <PerspectiveCamera makeDefault position={[0, 0, 20]} />
-              <HackerRoom
+              {/* <HackerRoom
                 // scale={0.07}
                 position={sizes.deskPosition}
                 rotation={[0, -Math.PI - 0.5, 0]}
                 scale={sizes.deskScale}
-              />
+              /> */}
+              <RubiksCube scale={sizes.deskScale * 100} position={sizes.rubiksCubePosition} />
+              <OrbitControls />
+
               <ambientLight intensity={1} />
-              <directionalLight intensity={0.5} position={[10, 10, 10]} />
+              <directionalLight intensity={1} position={[10, 10, 10]} />
             </Suspense>
           </Canvas>
         </div>
