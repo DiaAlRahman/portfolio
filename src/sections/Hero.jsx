@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import { Suspense, useEffect, useState } from "react";
-import { calculateSizes, heroTags } from "../constants";
+import { calculatePositions, calculateScales, heroTags } from "../constants";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import HackerRoom from "../components/HackerRoom";
@@ -9,6 +9,7 @@ import CanvasLoader from "../components/CanvasLoader";
 import { useMediaQuery } from "react-responsive";
 import PropTypes from 'prop-types'
 import RubiksCube from "../components/RubiksCube";
+import ReactLogo from "../components/ReactLogo";
 
 const Hero = () => {
   const HeroTags = ({ contents, interval = 10000 }) => {
@@ -76,7 +77,8 @@ const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
 
-  const sizes = calculateSizes(isSmall, isMobile, isTablet);
+  const positions = calculatePositions(isSmall, isMobile, isTablet);
+  const scales = calculateScales(isSmall, isMobile, isTablet);
 
   return (
     <section className="min-h-screen w-full flex flex-col relative">
@@ -93,7 +95,8 @@ const Hero = () => {
                 rotation={[0, -Math.PI - 0.5, 0]}
                 scale={sizes.deskScale}
               /> */}
-              <RubiksCube scale={sizes.deskScale * 100} position={sizes.rubiksCubePosition} />
+              <RubiksCube scale={scales.rubiksCubeScale} position={positions.rubiksCubePosition} />
+              <ReactLogo scale={scales.reactLogoScale} position={positions.reactLogoPosition} />
               <OrbitControls />
 
               <ambientLight intensity={1} />
