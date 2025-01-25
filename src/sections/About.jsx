@@ -21,7 +21,7 @@ const About = () => {
             <img src="/assets/dia.png" alt="grid-1" className='w-full sm:h-[276px] h-fit object-contain bg-transparent'/>
             <div>
               <p className='grid-headtext'>Hi, I am Dia!</p>
-              <p className="grid-subtext">On the pursuit to become the greatest software engineer!</p>
+              <p className="grid-subtext">"I feel like curiosity has driven me this far. Whenever I learn something new, I like to poke at it, challenge it, and make it my own. With Google, we entered an era where information was at our fingertips, and now, with AI, we're stepping into a whole new paradigm. We can focus on creating innovative solutions for humanity without being weighed down by the details. If that resonates with you, let’s collaborate!"</p>
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@ const About = () => {
             {/* <img src="/assets/grid2.png" alt="grid-2" className='w-full sm:h-[276px] h-fit object-contain' /> */}
             <div>
               <p className="grid-headtext">Tech Stack</p>
-              <p className="grid-subtext">I specialise in everything, a jack of all trades!</p>
+              <p className="grid-subtext">I started with C, learning the basics of coding. Then I got into Python, picking it up through hands-on projects. Later, web development caught my interest, and I dove into ReactJS, constantly challenging myself by building new projects to get better.</p>
             </div>
           </div>
         </div>
@@ -52,8 +52,10 @@ const About = () => {
             <div>
               <p className="grid-headtext">I work remotely across most timezones.</p>
               <p className="grid-subtext">I am based in Adelaide, with remote work available.</p>
+              <br />
+              <p className="grid-subtext">Take the globe for a spin, click and drag!</p>
               <a href="#contact">
-                <Button name='Contact Me' isBeam containerClass={'w-full mt-10'} />
+                <Button name='Get in touch' isBeam containerClass={'w-full mt-10'} />
               </a>
             </div>
           </div>
@@ -63,7 +65,9 @@ const About = () => {
             <img src="/assets/grid3.png" alt="" className="w-full h-fit object-contain sm:h-[266px]" />
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
-              <p className="grid-subtext">I love solving problems using code. Coding isn't just my proffession - it's my passion.</p>
+              <p className="grid-subtext"></p>
+              <p className="grid-subtext">The step-by-step process of coding really fascinates me. The ability to visualize and bring ideas to life through code is something I find incredibly rewarding. With technology becoming more deeply woven into our daily lives, this field is quickly becoming just as essential as anything else. Software has already impacted millions of lives. In the next 20 years, I want to work on a project that will revolutionize the education system—something that produces free, independent, productive thinkers. Thinkers who can drive real, positive change.</p>
+              <p className="grid-subtext">My passion now lies in web-based software, connectivity, and networking, with a strong interest in LLMs, AI, and computer vision. While coding is inherently enjoyable, it becomes truly fulfilling when I’m working on real-world problems. Education, in particular, is an area that urgently needs transformation, and I’m eager to play a role in reshaping it for the future.</p>
             </div>
           </div>
         </div>
