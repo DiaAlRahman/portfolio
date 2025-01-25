@@ -69,13 +69,13 @@ export const myProjects = [
     desc: "A sign up form to show my raw front-end skills using HTML, CSS and Javascript. The form should redirect to a login page as well where the user can access the iSketch app, which is one of my other projects that's listed on my profile.",
     subdesc: "The main challenge I faced while building was entirely the front-end aspect. The form elements being such an old part of the internet is hard to style. It was absolutely necessary to rid of all default styles and then apply more rounded borders, bigger fonts and such to make it look more modern.",
     href: 'https://diaalrahman.github.io/sign-up-form-for-iSketch/',
-    texture: '/textures/project/signup.png',
+    texture: '/portfolio/textures/project/signup.png',
     // logo: '/assets/iSketch.png',
     logoStyle: {
       // backgroundColor: '#2A1816',
       // boxShadow: '0px 0px 60px 0px #AA3C304D',
     },
-    spotlight: '/assets/spotlight1.png',
+    spotlight: '/portfolio/assets/spotlight1.png',
     tags: [
       // {
       //   id: 1,
@@ -90,14 +90,14 @@ export const myProjects = [
     subdesc:
       "The solution to building the div was to essentially divide the total height and width to each cell accordingly, and for the event listeners I mostly used name functions which helped in removing those event listeners later on.",
     href: 'https://diaalrahman.github.io/etch-a-sketch/',
-    texture: '/textures/project/isketch.png',
+    texture: '/portfolio/textures/project/isketch.png',
     // logo: '/assets/project-logo2.png',
     // logoStyle: {
     // backgroundColor: '#13202F',
     // border: '0.2px solid #17293E',
     // boxShadow: '0px 0px 60px 0px #2F6DB54D',
     // },
-    spotlight: '/assets/spotlight2.png',
+    spotlight: '/portfolio/assets/spotlight2.png',
     tags: [
       // {
       //   id: 1,
@@ -112,7 +112,7 @@ export const myProjects = [
     subdesc:
       "Initially, I had use object constructors to implement the project. But upon learning about classes, I went back to this project to reimplement it using the JS class syntax. This taught me the importance of writing readable code, even for simple applications like this such that any other developer understands what's going on even if they have never seen the source code before. Because it was readable, I was able to reimplement it easily despite having a few months gap between the original implementation.",
     href: "https://diaalrahman.github.io/d-library/",
-    texture: '/textures/project/dlib.png',
+    texture: '/portfolio/textures/project/dlib.png',
     // logo: '/assets/project-logo3.png',
     // logoStyle: {
     //   backgroundColor: '#60f5a1',
@@ -121,7 +121,7 @@ export const myProjects = [
     //   border: '0.2px solid rgba(208, 213, 221, 1)',
     //   boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
     // },
-    spotlight: '/assets/spotlight3.png',
+    spotlight: '/portfolio/assets/spotlight3.png',
     tags: [
       // {
       //   id: 1,
@@ -136,7 +136,7 @@ export const myProjects = [
     subdesc:
       "I learned how important it is to visualize the project from the user's perspective. Because after I overcame that obstacle, building the code was easy because I knew exactly what context to work with.The other obstacle I faced was implementing a true restart logic where I remove the current players and the game itself from memory. This obstacle was an important learning lesson that further taught how the front-end visuals and the barebones are concerns that are to be dealt with separately.",
     href: 'https://diaalrahman.github.io/tic-tac-toe-2.0/',
-    texture: '/textures/project/ttt.png',
+    texture: '/portfolio/textures/project/ttt.png',
     // logo: '/assets/project-logo4.png',
     // logoStyle: {
     //   backgroundColor: '#0E1F38',
@@ -148,7 +148,7 @@ export const myProjects = [
       {
         id: 1,
         name: 'React.js',
-        path: '/assets/react.svg',
+        path: '/portfolio/assets/react.svg',
       },
     ],
   },
@@ -157,14 +157,14 @@ export const myProjects = [
     desc: "I implemented the visual calculator by trying to simulate the behavior of basic Casio calculators. The most challenging aspect was surely trying to coordinate the visual elements with the event listeners and implementing a cache system that could handle chain calculations. ",
     subdesc: "The project also showed me how free a JavaScript writer can be. There are no rules forcing the user to write a build the codebase a certain way like seen in C++ or such. It was interesting and it helped me recognize the importance of code modularization and organization, which I eventually learned.",
     href: 'https://diaalrahman.github.io/rose-gold-calculator/',
-    texture: '/textures/project/calc.png',
+    texture: '/portfolio/textures/project/calc.png',
     // logo: '/assets/project-logo5.png',
     // logoStyle: {
     // backgroundColor: '#1C1A43',
     // border: '0.2px solid #252262',
     // boxShadow: '0px 0px 60px 0px #635BFF4D',
     // },
-    spotlight: '/assets/spotlight5.png',
+    spotlight: '/portfolio/assets/spotlight5.png',
     tags: [
       // {
       //   id: 1,
