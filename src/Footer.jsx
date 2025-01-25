@@ -4,13 +4,19 @@ const Footer = () => {
       <div className="text-white-500 flex gap-2">
         <div className="flex gap-3">
           <div className="social-icon">
-            <img src="/portfolio/assets/github.svg" alt="github" className="w-1/2 h-1/2" />
+            <a href="https://github.com/DiaAlRahman" target="_blank" rel="noreferrer">
+              <img src="/portfolio/assets/github.svg" alt="github" className="w-1/2 h-1/2" />
+            </a>
           </div>
           <div className="social-icon">
-            <img src="/portfolio/assets/twitter.svg" alt="twitter" className="w-1/2 h-1/2" />
+            <a href="https://x.com/namless_child">
+              <img src="/portfolio/assets/twitter.svg" alt="twitter" className="w-1/2 h-1/2" />
+            </a>
           </div>
           <div className="social-icon">
-            <img src="/portfolio/assets/instagram.svg" alt="instagram" className="w-1/2 h-1/2" />
+            <a href="https://www.instagram.com/nameless._.child">
+              <img src="/portfolio/assets/instagram.svg" alt="instagram" className="w-1/2 h-1/2" />
+            </a>
           </div>
         </div>
       </div>
