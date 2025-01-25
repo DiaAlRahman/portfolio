@@ -15,6 +15,7 @@
     "three-mesh-bvh": "^0.8.0"
   },
   "devDependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@eslint/js": "^9.17.0",
     "@gsap/react": "^2.1.2",
     "@react-three/drei": "^9.121.3",
