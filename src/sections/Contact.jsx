@@ -44,7 +44,7 @@ const Contact = () => {
     };
   };
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="contact">
       <h3 className="head-text">Contact Me</h3>
       <div className="relative min-h-screen flex items-center items-center justify-center flex-col">
         <img src="/assets/terminal.png" alt="terminal bg" className="absolute inset-0 min-h-screen" />

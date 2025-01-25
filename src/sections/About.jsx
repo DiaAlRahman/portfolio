@@ -1,6 +1,7 @@
 import React from 'react'
 import Globe from 'react-globe.gl'
 import Button from '../components/Button'
+import TechStack from '../components/TechStack';
 
 const About = () => {
   const [hasCopy, setHasCopy] = React.useState(false);
@@ -17,7 +18,7 @@ const About = () => {
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="/assets/grid1.png" alt="grid-1" className='w-full sm:h-[276px] h-fit object-contain' />
+            <img src="/assets/dia.png" alt="grid-1" className='w-full sm:h-[276px] h-fit object-contain bg-transparent'/>
             <div>
               <p className='grid-headtext'>Hi, I am Dia!</p>
               <p className="grid-subtext">On the pursuit to become the greatest software engineer!</p>
@@ -26,7 +27,8 @@ const About = () => {
         </div>
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="/assets/grid2.png" alt="grid-2" className='w-full sm:h-[276px] h-fit object-contain' />
+            <TechStack className='w-full sm:h-[276px] h-fit object-contain'/>
+            {/* <img src="/assets/grid2.png" alt="grid-2" className='w-full sm:h-[276px] h-fit object-contain' /> */}
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">I specialise in everything, a jack of all trades!</p>
@@ -50,7 +52,9 @@ const About = () => {
             <div>
               <p className="grid-headtext">I work remotely across most timezones.</p>
               <p className="grid-subtext">I am based in Adelaide, with remote work available.</p>
-              <Button name='Contact Me' isBeam containerClass={'w-full mt-10'}/>
+              <a href="#contact">
+                <Button name='Contact Me' isBeam containerClass={'w-full mt-10'} />
+              </a>
             </div>
           </div>
         </div>

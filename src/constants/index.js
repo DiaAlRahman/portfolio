@@ -301,3 +301,18 @@ export const workExperiences = [
     animation: 'salute',
   },
 ];
+
+export const techStack = [
+  "https://techstack-generator.vercel.app/js-icon.svg",
+  "https://techstack-generator.vercel.app/ts-icon.svg",
+  "https://techstack-generator.vercel.app/cpp-icon.svg",
+  "https://techstack-generator.vercel.app/react-icon.svg",
+  "https://techstack-generator.vercel.app/webpack-icon.svg",
+  "https://techstack-generator.vercel.app/python-icon.svg",
+  "https://techstack-generator.vercel.app/github-icon.svg",
+  "https://techstack-generator.vercel.app/docker-icon.svg",
+  "https://techstack-generator.vercel.app/mysql-icon.svg",
+  "https://techstack-generator.vercel.app/prettier-icon.svg",
+  "https://techstack-generator.vercel.app/eslint-icon.svg",
+  "https://techstack-generator.vercel.app/aws-icon.svg",
+];
