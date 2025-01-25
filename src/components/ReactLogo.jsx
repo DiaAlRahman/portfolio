@@ -12,7 +12,7 @@ import gsap from 'gsap';
 import { useRef } from 'react';
 
 const ReactLogo = (props) => {
-  const { nodes, materials } = useGLTF('models/react_logo.glb');
+  const { nodes, materials } = useGLTF('/portfolio/models/react_logo.glb');
   const logoRef = useRef();
 
   useGSAP(() => {
@@ -42,6 +42,6 @@ const ReactLogo = (props) => {
   );
 }
 
-useGLTF.preload('models/react_logo.glb')
+useGLTF.preload('/portfolio/models/react_logo.glb')
 
 export default ReactLogo;

@@ -42,15 +42,15 @@ const Projects = () => {
             </div> */}
             <a className="flex items-center gap-2 cursor-pointer text-white-600" href={myProjects[currIndex].href} target="_black" rel="noreferrer">
               <p>Live Preview</p>
-              <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
+              <img src="/portfolio/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
             </a>
           </div>
           <div className="flex justify-between items-center mt-7">
             <button className="arrow-btn" onClick={() => handleNavigation('prev')}>
-              <img src="/assets/left-arrow.png" alt="left-arrow" className="w-4 h-4" />
+              <img src="/portfolio/assets/left-arrow.png" alt="left-arrow" className="w-4 h-4" />
             </button>
             <button className="arrow-btn" onClick={() => handleNavigation('next')}>
-              <img src="/assets/right-arrow.png" alt="right-arrow" className="w-4 h-4" />
+              <img src="/portfolio/assets/right-arrow.png" alt="right-arrow" className="w-4 h-4" />
             </button>
           </div>
         </div>

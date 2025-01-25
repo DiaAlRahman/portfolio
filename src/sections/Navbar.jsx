@@ -42,7 +42,7 @@ const Navbar = () => {
               onClick={isSmallScreen ? toggleMenu : undefined}
               className='text-neutral-400 hover:text-white focus:outline-none flex'
               aria-label='Toggle Menu'>
-      <img src="assets/menu.svg" alt="menu" className="w-6 h-6" />
+      <img src="/portfolio/assets/menu.svg" alt="menu" className="w-6 h-6" />
           </button>
         </div>
       </div>

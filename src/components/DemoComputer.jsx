@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 import { useRef } from 'react';
 
 const DemoComputer = (props) => {
-  const { nodes, materials } = useGLTF('models/old_computer_v2.glb');
+  const { nodes, materials } = useGLTF('/portfolio/models/old_computer_v2.glb');
   const txtr = useTexture(props.texture);
   const groupRef = useRef();
 
@@ -51,6 +51,6 @@ DemoComputer.propTypes = {
   texture: PropTypes.string.isRequired,
 };
 
-useGLTF.preload('models/old_computer_v2.glb');
+useGLTF.preload('/portfolio/models/old_computer_v2.glb');
 
 export default DemoComputer;

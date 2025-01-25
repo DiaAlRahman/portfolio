@@ -18,7 +18,7 @@ const About = () => {
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="/assets/dia.png" alt="grid-1" className='w-full sm:h-[276px] h-fit object-contain bg-transparent'/>
+            <img src="/portfolio/assets/dia.png" alt="grid-1" className='w-full sm:h-[276px] h-fit object-contain bg-transparent'/>
             <div>
               <p className='grid-headtext'>Hi, I am Dia!</p>
               <p className="grid-subtext">"I feel like curiosity has driven me this far. Whenever I learn something new, I like to poke at it, challenge it, and make it my own. With Google, we entered an era where information was at our fingertips, and now, with AI, we're stepping into a whole new paradigm. We can focus on creating innovative solutions for humanity without being weighed down by the details. If that resonates with you, let’s collaborate!"</p>
@@ -28,7 +28,7 @@ const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <TechStack className='w-full sm:h-[276px] h-fit object-contain'/>
-            {/* <img src="/assets/grid2.png" alt="grid-2" className='w-full sm:h-[276px] h-fit object-contain' /> */}
+            {/* <img src="/portfolio/assets/grid2.png" alt="grid-2" className='w-full sm:h-[276px] h-fit object-contain' /> */}
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">I started with C, learning the basics of coding. Then I got into Python, picking it up through hands-on projects. Later, web development caught my interest, and I dove into ReactJS, constantly challenging myself by building new projects to get better.</p>
@@ -62,7 +62,7 @@ const About = () => {
         </div>
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
-            <img src="/assets/grid3.png" alt="" className="w-full h-fit object-contain sm:h-[266px]" />
+            <img src="/portfolio/assets/grid3.png" alt="" className="w-full h-fit object-contain sm:h-[266px]" />
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext"></p>
@@ -73,7 +73,7 @@ const About = () => {
         </div>
         <div className="xl:col-span-1 xl:row-span-2">
           <div className="grid-container">
-            <img src="/assets/grid4.png" alt="grid-4" className="w-full md:h-[126px] h-fit object-cover sm:h-[276px] sm:object-top" />
+            <img src="/portfolio/assets/grid4.png" alt="grid-4" className="w-full md:h-[126px] h-fit object-cover sm:h-[276px] sm:object-top" />
             <div className="space-y-2">
               <p className="grid-subtext text-center">Contact Me</p>
               <div className="copy-container" onClick={handleCopy}>

@@ -102,7 +102,7 @@ const Hero = () => {
                   scale={scales.deskScale}
                 />
               </HeroCamera>
-              
+
               <RubiksCube scale={scales.rubiksCubeScale} position={positions.rubiksCubePosition} />
               <ReactLogo scale={scales.reactLogoScale} position={positions.reactLogoPosition} />
               <Coffee position={positions.ringPosition} />

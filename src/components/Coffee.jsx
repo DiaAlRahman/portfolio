@@ -12,7 +12,7 @@ import gsap from 'gsap';
 import { useRef } from 'react'
 
 const Coffee = (props) => {
-  const { nodes, materials } = useGLTF('models/coffee.glb')
+  const { nodes, materials } = useGLTF('/portfolio/models/coffee.glb')
   const coffeeRef = useRef();
 
   useGSAP(() => {
@@ -43,6 +43,6 @@ const Coffee = (props) => {
   )
 }
 
-useGLTF.preload('models/coffee.glb')
+useGLTF.preload('/portfolio/models/coffee.glb')
 
 export default Coffee;

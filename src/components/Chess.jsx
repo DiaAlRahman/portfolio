@@ -12,7 +12,7 @@ import gsap from 'gsap';
 import { useRef } from 'react';
 
 const Chess = (props) => {
-  const { nodes, materials } = useGLTF('models/chess_piece_knight_horse.glb');
+  const { nodes, materials } = useGLTF('/portfolio/models/chess_piece_knight_horse.glb');
   const chessRef = useRef();
 
   useGSAP(() => {
@@ -40,6 +40,6 @@ const Chess = (props) => {
   )
 }
 
-useGLTF.preload('models/chess_piece_knight_horse.glb');
+useGLTF.preload('/portfolio/models/chess_piece_knight_horse.glb');
 
 export default Chess;

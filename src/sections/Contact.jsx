@@ -47,7 +47,7 @@ const Contact = () => {
     <section className="c-space my-20" id="contact">
       <h3 className="head-text">Contact Me</h3>
       <div className="relative min-h-screen flex items-center items-center justify-center flex-col">
-        <img src="/assets/terminal.png" alt="terminal bg" className="absolute inset-0 min-h-screen" />
+        <img src="/portfolio/assets/terminal.png" alt="terminal bg" className="absolute inset-0 min-h-screen" />
         <div className="contact-container">
           <h3 className="head-text">Lets talk</h3>
           <p className="text-lg text-white-600">Let's collaborate</p>
@@ -67,7 +67,7 @@ const Contact = () => {
             </label>
             <button className="field-btn" type="submit" disabled={loading}>
               {loading ? "Sending..." : "Send Message"}
-              <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
+              <img src="/portfolio/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
             </button>
           </form>
         </div>

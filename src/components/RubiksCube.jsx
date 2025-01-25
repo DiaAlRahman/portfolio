@@ -12,7 +12,7 @@ import { useRef } from 'react';
 
 const RubiksCube = (props) => {
   const cubeRef = useRef();
-  const { nodes, materials } = useGLTF('models/rubiks_cube.glb');
+  const { nodes, materials } = useGLTF('/portfolio/models/rubiks_cube.glb');
 
   useGSAP(() => {
     gsap.to(cubeRef.current.position, {
@@ -51,6 +51,6 @@ const RubiksCube = (props) => {
   )
 }
 
-useGLTF.preload('models/rubiks_cube.glb')
+useGLTF.preload('/portfolio/models/rubiks_cube.glb')
 
 export default RubiksCube;
