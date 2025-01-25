@@ -10,6 +10,11 @@ import { useMediaQuery } from "react-responsive";
 import PropTypes from 'prop-types'
 import RubiksCube from "../components/RubiksCube";
 import ReactLogo from "../components/ReactLogo";
+import Coffee from "../components/Coffee";
+import Chess from "../components/Chess";
+import HeroCamera from "../components/HeroCamera";
+import Button from "../components/Button";
+import MouseLightSource from "../components/MouseLightSource";
 
 const Hero = () => {
   const HeroTags = ({ contents, interval = 10000 }) => {
@@ -89,24 +94,36 @@ const Hero = () => {
           <Canvas className="w-full h-full">
             <Suspense fallback={<CanvasLoader />}>
               <PerspectiveCamera makeDefault position={[0, 0, 20]} />
-              {/* <HackerRoom
-                // scale={0.07}
-                position={sizes.deskPosition}
-                rotation={[0, -Math.PI - 0.5, 0]}
-                scale={sizes.deskScale}
-              /> */}
+              <HeroCamera isMobile={isMobile}>
+                <HackerRoom
+                  // scale={0.07}
+                  position={positions.deskPosition}
+                  rotation={[0, -Math.PI - 0.5, 0]}
+                  scale={scales.deskScale}
+                />
+              </HeroCamera>
+              
               <RubiksCube scale={scales.rubiksCubeScale} position={positions.rubiksCubePosition} />
               <ReactLogo scale={scales.reactLogoScale} position={positions.reactLogoPosition} />
-              <OrbitControls />
+              <Coffee position={positions.ringPosition} />
+              <Chess position={positions.chessPosition} scale={scales.chessScale} />
+              <OrbitControls enableZoom={ false } />
 
+              <MouseLightSource lightIntensity={10} />
               <ambientLight intensity={1} />
               <directionalLight intensity={1} position={[10, 10, 10]} />
             </Suspense>
           </Canvas>
+        </div>
+        <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+          <a href="#contact" className="w-fit">
+            <Button name="Have a Project? Let's Chat!" isBeam containerClass='sm:w-fit w-full sm:min-w-96'/>
+
+          </a>
         </div>
       </div>
     </section>
   )
 }
 
-export default Hero
+export default Hero;

@@ -32,7 +32,7 @@ const RubiksCube = (props) => {
       duration: 5, // Duration of one full rotation
       repeat: -1, // Repeat infinitely
       ease: "linear", // Smooth continuous rotation
-        onUpdate: () => {
+      onUpdate: () => {
     // Keep the rotation values within a 0-2π range
         cubeRef.current.rotation.x %= (2 * Math.PI);
         cubeRef.current.rotation.y %= (2 * Math.PI);

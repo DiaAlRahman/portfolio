@@ -258,16 +258,17 @@ export const calculateScales = (isSmall, isMobile, isTablet) => {
     deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
     rubiksCubeScale: isSmall ? 4 : isMobile ? 5 : 6.5,
     reactLogoScale: isSmall ? 0.15 : isMobile ? 0.25 : 0.5,
+    chessScale: isSmall ? 0.05 : isMobile ? 0.15 : 0.25,
   };
 };
 
 export const calculatePositions = (isSmall, isMobile, isTablet) => {
   return {
     deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
-    cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
+    chessPosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
     reactLogoPosition: isSmall ? [-5, -8, -10] : isMobile ? [-9, -8, -10] : isTablet ? [-11, -4, -10] : [-13, -10, -10],
-    ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
-    rubiksCubePosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [9, 3, 0],
+    ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-9, 2, 0],
+    rubiksCubePosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [9, 2, 0],
   };
 };
 
