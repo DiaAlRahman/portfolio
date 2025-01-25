@@ -49,8 +49,8 @@ const Contact = () => {
       <div className="relative min-h-screen flex items-center items-center justify-center flex-col">
         <img src="/portfolio/assets/terminal.png" alt="terminal bg" className="absolute inset-0 min-h-screen" />
         <div className="contact-container">
-          <h3 className="head-text">Lets talk</h3>
-          <p className="text-lg text-white-600">Let's collaborate</p>
+          <h3 className="head-text">Get in touch</h3>
+          <p className="text-lg text-white-600">Share your ideas</p>
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
             <label htmlFor="" className="space-y-3">
@@ -63,7 +63,7 @@ const Contact = () => {
             </label>
             <label htmlFor="" className="space-y-3">
               <span className="field-label">Your message</span>
-              <textarea name="message" value={form.message} onChange={handleChange} rows={5} required className="field-input" placeholder="What say?"/>
+              <textarea name="message" value={form.message} onChange={handleChange} rows={5} required className="field-input" placeholder="What do you want us to build?"/>
             </label>
             <button className="field-btn" type="submit" disabled={loading}>
               {loading ? "Sending..." : "Send Message"}
