@@ -4,17 +4,17 @@ const Footer = () => {
       <div className="text-white-500 flex gap-2">
         <div className="flex gap-3">
           <div className="social-icon">
-            <a href="https://github.com/DiaAlRahman" target="_blank" rel="noreferrer">
+            <a href="https://github.com/DiaAlRahman" target="_blank" rel="noreferrer" className="text-center">
               <img src="/portfolio/assets/github.svg" alt="github" className="w-1/2 h-1/2 cursor-pointer" />
             </a>
           </div>
           <div className="social-icon">
-            <a href="https://x.com/namless_child">
+            <a href="https://x.com/namless_child" target="_blank" rel="noreferrer" className="flex items-center">
               <img src="/portfolio/assets/twitter.svg" alt="twitter" className="w-1/2 h-1/2 cursor-pointer" />
             </a>
           </div>
           <div className="social-icon">
-            <a href="https://www.instagram.com/nameless._.child">
+            <a href="https://www.instagram.com/nameless._.child" target="_blank" rel="noreferrer">
               <img src="/portfolio/assets/instagram.svg" alt="instagram" className="w-1/2 h-1/2 cursor-pointer" />
             </a>
           </div>
