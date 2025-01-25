@@ -24,24 +24,24 @@ const Projects = () => {
           <div className="absolute top-0 right-0">
             <img src={myProjects[currIndex].spotlight} alt="spotlight" className="w-full h-96 object-cover rounded-xl" />
           </div>
-          <div className="p-3 backdrop-filter backdrop-blur 3xl w-fit rounded-lg" style={myProjects[currIndex].logoStyle}>
+          {/* <div className="p-3 backdrop-filter backdrop-blur 3xl w-fit rounded-lg" style={myProjects[currIndex].logoStyle}>
             <img src={myProjects[currIndex].logo} alt="logo" className="w-10 h-10 shadow-sm" />
-          </div>
-          <div className="flex flex-col gap-5 text-white-600 my-5">
+          </div> */}
+          <div className="flex flex-col gap-5 text-white-600 my-5 sm:h-[600px]">
             <p className="text-white text-2xl font-semibold animatedText">{myProjects[currIndex].title}</p>
             <p className="animatedText">{myProjects[currIndex].desc}</p>
             <p className="animatedText">{myProjects[currIndex].subdesc}</p>
           </div>
           <div className="flex items-center justify-between flex-wrap gap-5">
-            <div className="flex items-center gap-3">
+            {/* <div className="flex items-center gap-3">
               {myProjects[currIndex].tags.map((tag, index) => (
                 <div className="tech-logo" key={index}>
                   <img src={tag.path} alt={tag.name} />
                 </div>
               ))} 
-            </div>
+            </div> */}
             <a className="flex items-center gap-2 cursor-pointer text-white-600" href={myProjects[currIndex].href} target="_black" rel="noreferrer">
-              <p>Check Live Site</p>
+              <p>Live Preview</p>
               <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
             </a>
           </div>

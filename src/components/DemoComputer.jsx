@@ -6,14 +6,14 @@ Source: https://sketchfab.com/3d-models/old-computer-v2-b389fddc31ea459597fb3e1d
 Title: Old Computer V2
 */
 import { useGSAP } from '@gsap/react';
-import { useGLTF, useVideoTexture } from '@react-three/drei'
+import { useGLTF, useTexture, useVideoTexture } from '@react-three/drei'
 import gsap from 'gsap';
 import PropTypes from 'prop-types';
 import { useRef } from 'react';
 
 const DemoComputer = (props) => {
   const { nodes, materials } = useGLTF('models/old_computer_v2.glb');
-  const txtr = useVideoTexture(props.texture);
+  const txtr = useTexture(props.texture);
   const groupRef = useRef();
 
   useGSAP(() => {
@@ -51,7 +51,6 @@ DemoComputer.propTypes = {
   texture: PropTypes.string.isRequired,
 };
 
-useGLTF.preload('models/old_computer_v2.glb');
 useGLTF.preload('models/old_computer_v2.glb');
 
 export default DemoComputer;

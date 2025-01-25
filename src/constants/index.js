@@ -65,131 +65,84 @@ export const clientReviews = [
 
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
-    subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-    texture: '/textures/project/project1.mp4',
-    logo: '/assets/project-logo1.png',
+    title: 'iSketch - Sign Up Page',
+    desc: "A sign up form to show my raw front-end skills using HTML, CSS and Javascript. The form should redirect to a login page as well where the user can access the iSketch app, which is one of my other projects that's listed on my profile.",
+    subdesc: "The main challenge I faced while building was entirely the front-end aspect. The form elements being such an old part of the internet is hard to style. It was absolutely necessary to rid of all default styles and then apply more rounded borders, bigger fonts and such to make it look more modern.",
+    href: 'https://diaalrahman.github.io/sign-up-form-for-iSketch/',
+    texture: '/textures/project/signup.png',
+    // logo: '/assets/iSketch.png',
     logoStyle: {
-      backgroundColor: '#2A1816',
-      border: '0.2px solid #36201D',
-      boxShadow: '0px 0px 60px 0px #AA3C304D',
+      // backgroundColor: '#2A1816',
+      // boxShadow: '0px 0px 60px 0px #AA3C304D',
     },
     spotlight: '/assets/spotlight1.png',
     tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
+      // {
+      //   id: 1,
+      //   name: 'React.js',
+      //   path: '/assets/react.svg',
+      // },
     ],
   },
   {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
-    desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+    title: 'iSketch - Etch-A-Sketch App',
+    desc: "An etch-a-sketch app that follows the pointer and marks any square that detected a mouse hover. Try drawing an apple! The most challenging aspect was figuring out how to implement the squares themselves. How to build them, how to update them based on the grid size, and how to add and remove event listeners based on which option was toggled. ",
     subdesc:
-      'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-    href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-    texture: '/textures/project/project2.mp4',
-    logo: '/assets/project-logo2.png',
-    logoStyle: {
-      backgroundColor: '#13202F',
-      border: '0.2px solid #17293E',
-      boxShadow: '0px 0px 60px 0px #2F6DB54D',
-    },
+      "The solution to building the div was to essentially divide the total height and width to each cell accordingly, and for the event listeners I mostly used name functions which helped in removing those event listeners later on.",
+    href: 'https://diaalrahman.github.io/etch-a-sketch/',
+    texture: '/textures/project/isketch.png',
+    // logo: '/assets/project-logo2.png',
+    // logoStyle: {
+    // backgroundColor: '#13202F',
+    // border: '0.2px solid #17293E',
+    // boxShadow: '0px 0px 60px 0px #2F6DB54D',
+    // },
     spotlight: '/assets/spotlight2.png',
     tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
+      // {
+      //   id: 1,
+      //   name: 'React.js',
+      //   path: '/assets/react.svg',
+      // },
     ],
   },
   {
-    title: 'CarePulse - Health Management System',
-    desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+    title: 'D Library - Personal Library',
+    desc: "The current implementation only focusses on the JavaScript aspect, and less so on the front-end. This is the foundation on which I will be building the visuals for this library app. I have plans to incorporate a database such that individual users can log in and have saved states of their library. In the current version, the user is able to add/remove books, keep track of page numbers, and if they have already read the book. From my previous projects, I was aware of how treating the inherent logic and the front-end visuals as separate concerns was really important. The planning phase was easier with this mindset, the coding aspect even easier. ",
     subdesc:
-      'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-    texture: '/textures/project/project3.mp4',
-    logo: '/assets/project-logo3.png',
-    logoStyle: {
-      backgroundColor: '#60f5a1',
-      background:
-        'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-      border: '0.2px solid rgba(208, 213, 221, 1)',
-      boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
-    },
+      "Initially, I had use object constructors to implement the project. But upon learning about classes, I went back to this project to reimplement it using the JS class syntax. This taught me the importance of writing readable code, even for simple applications like this such that any other developer understands what's going on even if they have never seen the source code before. Because it was readable, I was able to reimplement it easily despite having a few months gap between the original implementation.",
+    href: "https://diaalrahman.github.io/d-library/",
+    texture: '/textures/project/dlib.png',
+    // logo: '/assets/project-logo3.png',
+    // logoStyle: {
+    //   backgroundColor: '#60f5a1',
+    //   background:
+    //     'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+    //   border: '0.2px solid rgba(208, 213, 221, 1)',
+    //   boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+    // },
     spotlight: '/assets/spotlight3.png',
     tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
+      // {
+      //   id: 1,
+      //   name: 'React.js',
+      //   path: '/assets/react.svg',
+      // },
     ],
   },
   {
-    title: 'Horizon - Online Banking Platform',
-    desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+    title: 'Noughts and Crosses - Tic-Tac-Toe Game',
+    desc: "I implemented an interesting solution that has a better time complexity than just brute forcing the game status each time. Because there are exactly 8 game statuses that corresponds to a win, which was stored in an array. The game status was represented using bits for each cell and each player had one, an example being '0b111000000, // Row 1', which shows that this player got three in a row. Surprisingly, this wasn't the most challenging aspect, it was difficult to plan the project to the minute detail. I ensured to spend the most time in the planning phase and deciding what 'classes' and 'methods' I would work with. My aim was to build a modularized and organized codebase, which I later on implemented using IIFE's. ",
     subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-    href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-    texture: '/textures/project/project4.mp4',
-    logo: '/assets/project-logo4.png',
-    logoStyle: {
-      backgroundColor: '#0E1F38',
-      border: '0.2px solid #0E2D58',
-      boxShadow: '0px 0px 60px 0px #2F67B64D',
-    },
+      "I learned how important it is to visualize the project from the user's perspective. Because after I overcame that obstacle, building the code was easy because I knew exactly what context to work with.The other obstacle I faced was implementing a true restart logic where I remove the current players and the game itself from memory. This obstacle was an important learning lesson that further taught how the front-end visuals and the barebones are concerns that are to be dealt with separately.",
+    href: 'https://diaalrahman.github.io/tic-tac-toe-2.0/',
+    texture: '/textures/project/ttt.png',
+    // logo: '/assets/project-logo4.png',
+    // logoStyle: {
+    //   backgroundColor: '#0E1F38',
+    //   border: '0.2px solid #0E2D58',
+    //   boxShadow: '0px 0px 60px 0px #2F67B64D',
+    // },
     spotlight: '/assets/spotlight4.png',
     tags: [
       {
@@ -197,58 +150,27 @@ export const myProjects = [
         name: 'React.js',
         path: '/assets/react.svg',
       },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
     ],
   },
   {
-    title: 'Imaginify - AI Photo Manipulation App',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-    subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-    texture: '/textures/project/project5.mp4',
-    logo: '/assets/project-logo5.png',
-    logoStyle: {
-      backgroundColor: '#1C1A43',
-      border: '0.2px solid #252262',
-      boxShadow: '0px 0px 60px 0px #635BFF4D',
-    },
+    title: 'Rose Gold Calculator - Calculator App',
+    desc: "I implemented the visual calculator by trying to simulate the behavior of basic Casio calculators. The most challenging aspect was surely trying to coordinate the visual elements with the event listeners and implementing a cache system that could handle chain calculations. ",
+    subdesc: "The project also showed me how free a JavaScript writer can be. There are no rules forcing the user to write a build the codebase a certain way like seen in C++ or such. It was interesting and it helped me recognize the importance of code modularization and organization, which I eventually learned.",
+    href: 'https://diaalrahman.github.io/rose-gold-calculator/',
+    texture: '/textures/project/calc.png',
+    // logo: '/assets/project-logo5.png',
+    // logoStyle: {
+    // backgroundColor: '#1C1A43',
+    // border: '0.2px solid #252262',
+    // boxShadow: '0px 0px 60px 0px #635BFF4D',
+    // },
     spotlight: '/assets/spotlight5.png',
     tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
+      // {
+      //   id: 1,
+      //   name: 'React.js',
+      //   path: '/assets/react.svg',
+      // },
     ],
   },
 ];
