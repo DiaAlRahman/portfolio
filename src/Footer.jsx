@@ -4,12 +4,12 @@ const Footer = () => {
       <div className="text-white-500 flex gap-2">
         <div className="flex gap-3">
           <div className="social-icon">
-            <a href="https://github.com/DiaAlRahman" target="_blank" rel="noreferrer" className="flex justify-center">
+            <a href="https://github.com/DiaAlRahman" target="_blank" rel="noreferrer" className="flex justify-center w-full h-full">
               <img src="/portfolio/assets/github.svg" alt="github" className="w-1/2 h-1/2 cursor-pointer" />
             </a>
           </div>
           <div className="social-icon">
-            <a href="https://x.com/namless_child" target="_blank" rel="noreferrer" className="flex justify-center">
+            <a href="https://x.com/namless_child" target="_blank" rel="noreferrer" className="flex justify-center w-full h-full">
               <img src="/portfolio/assets/twitter.svg" alt="twitter" className="w-1/2 h-1/2 cursor-pointer" />
             </a>
           </div>
