@@ -13,11 +13,11 @@ const Footer = () => {
               <img src="/portfolio/public/assets/twitter.svg" alt="twitter" className="w-1/2 h-1/2 cursor-pointer" />
             </a>
           </div>
-          <div className="social-icon">
+          {/* <div className="social-icon">
             <a href="https://www.instagram.com/nameless._.child" target="_blank" rel="noreferrer" className="flex justify-center">
               <img src="/portfolio/public/assets/instagram.svg" alt="instagram" className="w-1/2 h-1/2 cursor-pointer" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <p className="text-white-500">© 2025 Dia. All rights reserved.</p>
