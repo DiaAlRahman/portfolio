@@ -51,7 +51,7 @@ const About = () => {
             </div>
             <div>
               <p className="grid-headtext">I work remotely across most timezones.</p>
-              <p className="grid-subtext">I am based in Adelaide, with remote work available.</p>
+              <p className="grid-subtext">I am based in Sydney, with remote work available.</p>
               <br />
               <p className="grid-subtext">Take the globe for a spin, click and drag!</p>
               <a href="#contact">
