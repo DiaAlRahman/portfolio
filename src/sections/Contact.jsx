@@ -59,7 +59,7 @@ const Contact = () => {
             </label>
             <label htmlFor="" className="space-y-3">
               <span className="field-label">Email</span>
-              <input type="email" name="email" value={form.email} onChange={handleChange} required className="field-input" placeholder="md@gmail.com"/>  
+              <input type="email" name="email" value={form.email} onChange={handleChange} required className="field-input" placeholder="...@gmail.com"/>  
             </label>
             <label htmlFor="" className="space-y-3">
               <span className="field-label">Your message</span>
